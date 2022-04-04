@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name" translatable="true"> Tutorial Marks</string>
+
+    <string name="back">《— Back</string>
+
+    <string name="digits">1234567890zbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="preference_file_key">au.edu.utas.daih.a2huaizhidai530562</string>
+
+<!--    //choice page strings-->
+    <string name="NewUser1">Are You a New User?</string>
+    <string name="NewUserChoice1">Yes, it\'s my first time to use it.</string>
+    <string name="tipOfChoice1">If yes, a shot introduction will help you to be familiar with this app.</string>
+    <string name="NewUserChoice2">No, I am familiar with it.</string>
+<!--    //choice page strings end-->
+
+<!--    //tag-->
+    <string name="homeTag">Home</string>
+    <string name="weekTag">Week</string>
+    <string name="studentTag">Student</string>
+
+<!--    //home information-->
+    <string name="homeInformation"> KIT607 \n\n Wednesday \n 14:00 – 16:00 \n\n Tutor: \n Havier Dai</string>
+
+<!--    //week number-->
+    <string name="week2">Week 2</string>
+    <string name="week3">Week 3</string>
+    <string name="week4">Week 4</string>
+    <string name="week5">Week 5</string>
+    <string name="week6">Week 6</string>
+    <string name="week7">Week 7</string>
+    <string name="week8">Week 8</string>
+    <string name="week9">Week 9</string>
+    <string name="week10">Week 10</string>
+    <string name="week11">Week 11</string>
+    <string name="week12">Week 12</string>
+
+<!--    //weekly mark page-->
+    <string name="titleFirstName">First Name</string>
+    <string name="titleFamilyName">Family Name</string>
+    <string name="titleID">Student ID</string>
+    <string name="titleMark">Mark</string>
+    <string name="loading">Loading . . .</string>
+    <string name="addNewStudent">Add New Student</string>
+    <string name="editScheme">Edit Mark Scheme</string>
+    <string name="summaryOfThisWeek">Summary of This Week (Average Score)</string>
+    <string name="filter">Filter</string>
+    <string name="PartOfNameOrStudentID">StudentID</string>
+
+
+<!--    //single student page-->
+    <string name="shareButton">Share This Mark List</string>
+    <string name="removeButton">Remove This Student</string>
+    <string name="modifyButton">Edit This Student</string>
+    <string name="summary">Summary</string>
+
+<!--    //Scheme page-->
+<!---->
+    <string name="markScheme">Mark Scheme</string>
+    <string name="checkBoxText">Single Check Box</string>
+    <string name="GradeHD">Grade Level (HD/DN/CR/PP/NN)</string>
+    <string name="GradeA">Grade Level (A/B/C/D/F)</string>
+    <string name="MultiCheckBox">Multiple Check Box</string>
+    <string name="CheckBoxNo">Checkbox Number(2 - 5):</string>
+    <string name="OutOfText">Score Out Of X</string>
+    <string name="OutOf">Out Of (1 - 100):</string>
+    <string name="Choose">Choose</string>
+    <string name="outOfInput">(1 - 100)</string>
+    <string name="MultiInput">(2 - 5)</string>
+    <string name="CurrentWeek">Chosen Week</string>
+    <string name="currentScheme">Corresponding Scheme</string>
+    <string name="currentSchemeText">Chosen Week and Corresponding Scheme:</string>
+
+<!--    //modify mark-->
+    <string name="checkboxTitle">Checkbox</string>
+    <string name="checkboxMessage">attended is 100,and not attended is 0</string>
+    <string name="gradeHDTitle">Grade (HD/DN/CR/PP/NN)</string>
+    <string name="gradeHDMessage">HD+ = 100, HD = 80, DN = 70, CR = 60. PP = 50, NN = 0</string>
+    <string name="scoreAlertHint">His/Her score</string>
+    <string name="scoreTitle">Score</string>
+    <string name="scoreInput">Please input a score.</string>
+
+
+<!--    //new student-->
+    <string name="newStudentTitle">Add a New Student</string>
+    <string name="confirm">Confirm</string>
+    <string name="firstNameEmptyAlert">First Name Area Cannot Be Empty!</string>
+    <string name="familyNameEmptyAlert">Family Name Area Cannot Be Empty!</string>
+    <string name="studentIDEmptyAlert">Student ID Area cannot Be Empty!</string>
+    <string name="addSuccessfullyAlert">A New Student Has Been Added!</string>
+    <string name="editTitle">Edit the Information of the Student</string>
+    <string name="takeAPhotoByCamera">Take a photo</string>
+    <string name="chooseAPhotoInGallery">Choose a photo</string>
+
+<!--    all help-->
+    <string name="HELP">HELP</string>
+    <string name="WeekHelp1">1. The EDIT MARK SCHEME button can help you change the Mark Scheme.</string>
+    <string name="WeekHelp2">2. The FILTER button can search a student by full ID. If you want to go back after filtering, just click filter
+     without input anything.</string>
+    <string name="weekHelp3">3. The MARK will be displayed first by the mark type of this week. If some mark cannot be displayed
+    exactly by mark type(change mark scheme after marking), it will show the percentage score.</string>
+    <string name="WeekHelp4">4. You can directly go to detailed student page by clicking HIS/HER NAME(or ID), or give a mark by clicking a MARK.</string>
+
+    <string name="homeHelp1">1. This page left shows some basic information.</string>
+    <string name="homeHelp2">2. This page right shows all the tutorial weeks, and every week can be clicked to turn to weekly page.</string>
+    <string name="name">Name:</string>
+
+
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeekActivity">
+
+
+    <TextView
+        android:id="@+id/studentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/loading"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weekTitle1" />
+
+    <TextView
+        android:id="@+id/weekTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEEK X"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tableTitle"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentCount">
+
+        <TextView
+            android:id="@+id/titleFrstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/titleFirstName"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/titleFamilyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/titleFamilyName"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/titleID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/titleID"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/titleMark"
+            android:layout_width="86sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/titleMark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--    <Button-->
+<!--        android:id="@+id/shareBtn"-->
+<!--        android:layout_width="240dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="570dp"-->
+<!--        android:text="@string/shareButton"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/newStudentBtn"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/weekTitle1" />-->
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="235dp"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        app:layout_constraintEnd_toEndOf="@+id/tableTitle"
+        app:layout_constraintStart_toStartOf="@+id/tableTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tableTitle">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/studentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/newStudentBtn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
+        android:text="@string/addNewStudent"
+        app:backgroundTint="#FB8C00"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/weekTitle1" />
+
+    <Button
+        android:id="@+id/backToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:backgroundTint="#8A8C88"
+        app:layout_constraintBottom_toTopOf="@+id/studentCount"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/editScheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/editScheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backToHome" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <TextView
+            android:id="@+id/summaryTitle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/summaryOfThisWeek" />
+
+        <TextView
+            android:id="@+id/summaryMark"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentCount">
+
+        <EditText
+            android:id="@+id/filterInput"
+            android:layout_width="249dp"
+            android:layout_height="44dp"
+            android:digits="@string/digits"
+            android:ems="10"
+            android:hint="@string/PartOfNameOrStudentID"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/filterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter"
+            app:backgroundTint="@color/green"
+            app:rippleColor="@color/green" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/weekHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="？"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/weekTitle1"
+        app:layout_constraintStart_toEndOf="@+id/weekTitle1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
